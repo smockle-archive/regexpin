@@ -1,14 +1,22 @@
 {
-  "name": "immutable-regexin",
+  "name": "regexpin",
   "version": "1.0.0",
-  "description": "",
+  "description": "Like Immutable.JS' Iterable#getIn, but with RegExp support.",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
     "test": "tape tests/**/*.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smockle/regexpin.git"
+  },
   "author": "Clay Miller <clay@smockle.com> (http://www.smockle.com)",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/smockle/regexpin/issues"
+  },
+  "homepage": "https://github.com/smockle/regexpin#readme",
   "dependencies": {
     "immutable": "^3.7.6"
   },

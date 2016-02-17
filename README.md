@@ -1,6 +1,6 @@
 # regexpIn
 
-Like Immutable.JS’ [https://facebook.github.io/immutable-js/docs/#/Iterable/getIn](Iterable#getIn), but with `RegExp` support.
+Like Immutable.JS’ [Iterable#getIn](https://facebook.github.io/immutable-js/docs/#/Iterable/getIn), but with `RegExp` support.
 
 ## Installation
 
@@ -25,4 +25,4 @@ console.log(newMessage) // Also logs `3`
 
 ## Testing
 
-`regexpIn` includes several unit tests. After cloning the `regexpIn` repo locally, run `npm install && npm test` in the project folder to execute them.
+`regexpIn` includes several unit tests. After cloning the `regexpIn` repo locally, run `npm install` in the project folder to install dependencies, then `npm test` to execute the tests.
