@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/smockle/regexpin.svg?branch=master)](https://travis-ci.org/smockle/regexpin)
+
 # regexpIn
 
 Like Immutable.JS’ [Iterable#getIn](https://facebook.github.io/immutable-js/docs/#/Iterable/getIn), but with `RegExp` support.
