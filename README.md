@@ -1,3 +1,4 @@
+[![npm](https://img.shields.io/npm/v/regexpin.svg)](https://www.npmjs.com/package/regexpin)
 [![Build Status](https://travis-ci.org/smockle/regexpin.svg?branch=master)](https://travis-ci.org/smockle/regexpin)
 [![Build status](https://ci.appveyor.com/api/projects/status/5pkcck6x92p98p6d?svg=true)](https://ci.appveyor.com/project/smockle/regexpin)
 [![Code Climate](https://codeclimate.com/github/smockle/regexpin/badges/gpa.svg)](https://codeclimate.com/github/smockle/regexpin)
