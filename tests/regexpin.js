@@ -3,11 +3,16 @@ const Immutable = require('immutable')
 const regexpIn = require('../src/regexpin')
 
 test('regexpIn', (t) => {
-  t.plan(29)
+  t.plan(30)
 
   t.throws(
     regexpIn,
     'throws an error when search key path is missing'
+  )
+
+  t.throws(
+    regexpIn.bind(null, Immutable.Set([3]), Immutable.Map({ 'a': 3 })),
+    'throws an error when search key path doesn’t contain strings or regular expressions'
   )
 
   t.equal(
