@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "pretest": "npm run snyk-protect",
     "test": "tape tests/**/*.js && snyk test --dev",
     "coverage": "istanbul cover tape tests/**/*.js",
     "snyk-protect": "snyk protect",
