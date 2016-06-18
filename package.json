@@ -5,8 +5,10 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "tape tests/**/*.js",
-    "coverage": "istanbul cover tape tests/**/*.js"
+    "test": "tape tests/**/*.js && snyk test --dev",
+    "coverage": "istanbul cover tape tests/**/*.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -19,12 +21,14 @@
   },
   "homepage": "https://github.com/smockle/regexpin#readme",
   "dependencies": {
-    "immutable": "^3.7.6"
+    "immutable": "^3.7.6",
+    "snyk": "^1.14.3"
   },
   "devDependencies": {
     "codeclimate-test-reporter": "^0.3.1",
     "coveralls": "^2.11.6",
     "istanbul": "^0.4.2",
     "tape": "^4.4.0"
-  }
+  },
+  "snyk": true
 }

@@ -1,9 +1,9 @@
 language: node_js
 node_js:
-- "6"
-- "6.2.0"
-- "4"
-- "4.4.5"
+- '6'
+- 6.2.0
+- '4'
+- 4.4.5
 notifications:
   email:
     on_success: change
@@ -17,7 +17,9 @@ after_script:
 - npm run coverage
 - cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
 - "./node_modules/.bin/codeclimate-test-reporter < ./coverage/lcov.info"
+- snyk auth $SNYK_TOKEN && snyk monitor
 env:
   global:
   - secure: eTl68A32kNfZ+yDyKe/2rMdfTyNXWksz2bhJEV8pnBEc3LjLjY97KYAW8rICmVyg21fdOwXzm0adoNzj5hIin/Q72ISJFACsWy18MDfr68pHBweNQ8FGbuTzMhQgxLGr5IKFmDfysET/KLXZvED22w99F8SQ2cw59zrqJKB+iLIafbBabTShhwqVH5JmuGxqPgetZNuw24qWirHfHRgCaXm4Mq6YBKPgLwAWb4yCh4FRPP1Y6nxQ9E71fRwWHkD1wXOh3YcacvrF8WtNHeE415GxsNLhEK3iiwjhqLyre7IA6C3XPYTQasWtPygKIMk4UMevnQM3NgKBs2u62fZxNwsgoM6aKtIfUkDMVUx+Mvwk8rbRuVX+jcoO16A2ZktOpdEQ6BMoZWQlBx1AU2YwpL4Zqy+ChgAIf/dQfwi/jSm4ENC4CNz1Z5D4eY83aX2nQwwhoVVkThmL8JIpNhn8a1ZmgzmlgTiW/pj+qF8pJYUDJ7t8Mi1qhqZwSIBG1U/291can3cPo1WKzNZ7dPUYz0GP8w9PebJh/erJDyOe0PFMHkJ2jw/6Ep0QZTTvRb3GqeB9rGLQoiuybZ8Vruzykv2cyVtFmovaS4xVP+KD0R8Ya6SX0/TerEUz/6BU4L8+cmpXt1+2Nudgux1cip1jE4d1Ha+R97diZ8Mxwfw2rkk=
   - secure: YULGQgGvEOZKXjryY+YD5RU9NXNVdYXHLT3W81mq08sdkbpXXwiEzAB79gXd7I3kib7yxpa9T3LtdC38jE9U4Z1fLd0G156vmGZlFCnsMshZftMJf3ZV/4WkNNAZl+z/RZJJrqtK+qzJ8DpdotpvU4/9nl3fIDSHDTobaplh6l3xpXW2NKXvN5aq5cSxZbt5AIcmFLjCS7gYEYUAxiMNuxu5llunSHIsOSam3pZKPgwmBc2Mx4skQ2VdUueSS/WGstHz1Q7gr6vyg84nwvnxh56IF1eAx6KmXJQ5ntO6Ogn1/ObIzVivsJ7mH0RGX791X+F/A2iXMuGZKwJgAZPTrm89fP3y1HBiM57lseQA00LyUZCkATVkb7nFp4VLfG7W9F5krzNaKuodzRmyEejokOpVrwIIKMgwt2rJpvKnyeMAqRDwUhwco3wuiWo3aFIsOVl4DIEkFzdJ5bXFZhVdULSRfPrsmqXB7DhmYZdAZE+l7QwlaQq6CNXtCN2tgCgDlMEdfRFRRlikiqB8vHuGNk0H1Op2eg6Cv4EPbFOpY9wkHKvgfmnnBi637un12t3W04eix9i8JrWTs6KWOgRbiWnjd4egHg8PjeBIHLyhxHYZ1j0LjgRAm6Bt/NI+veFF7wUZYtgHFWCQTt6YKds2q5J5oX5V5x2P872nTBTgrzs=
+  - secure: bqzTLnlhY/3Zv7HGqRCbpz5ocTnW43r+OnkeBcrhIdvwqRhWGsTEoxF70r0WjHEcnT4LSynaTzIQIOb2F2whK8dvq0he/OKAcKFBRS8WPBG/Zu4P0DewCa666UINjHml+1W7g3hJM9mwn+gWWzRdGFaZy9t5uYmHiqixHwRiQvWXAXcybXqdNy7zhlq/MBlBTrcnBvy/jUmsePI0bHaZwPamY+TCsAz26NuoAQ/yjDtiqXLTwhyPXVWe9Ug0fNvRX/h7RtstZD5nXMbU3oUlRW/tte1bPnlJ6Vqu3kmq4b0z8oArSs6vLheSaSqpf4FG3pLgVSybp3/FBPaeID4UITckgiohK598oPsm0f5mdR/jcpfoQ7SwMamOO/xJ6Re4/6VQ28Cl/MpeDpKtwbDXrrDN9x0RI4zDqZeFbwW+BuvJZLVbI/zTHAp8bLi/DFG7LkmNWFtMkdRWRIX65JeqH5U0hz37N5lJH40TavNkx/Xzb0GSRacN0C8e/jyC/isI9x9BI27x+++i64B5KPGUQcUHHiXy4qknqHCgF3KoP6wDUIm8dOtiJYDjixJICXbt/Pl7WXdOh398yRZ2rnZ0kswbW0kD0VzZoXxRufgWW8IWz51ZmWoeq2vCMsdO3/yvkC6ZrkKWS2zKcNwFNuExtXM+U6PdK6AoEQYTH4hHj+o=
