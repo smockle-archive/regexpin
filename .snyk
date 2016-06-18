@@ -9,6 +9,6 @@ patch:
         patched: '2016-06-18T06:19:06.893Z'
   'npm:request:20160119':
     - coveralls > request:
-        patched: '2016-06-18T06:20:49.518Z'
+        patched: '2016-06-18T20:46:20.430Z'
     - codeclimate-test-reporter > request:
         patched: '2016-06-18T06:19:06.893Z'
