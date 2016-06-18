@@ -7,7 +7,7 @@
     "start": "node index.js",
     "test": "tape tests/**/*.js && snyk test --dev",
     "coverage": "istanbul cover tape tests/**/*.js",
-    "snyk-protect": "snyk protect",
+    "snyk-protect": "snyk protect --dev",
     "prepublish": "npm run snyk-protect"
   },
   "repository": {
