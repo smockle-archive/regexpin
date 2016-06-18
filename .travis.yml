@@ -8,14 +8,14 @@ notifications:
   email:
     on_success: change
     on_failure: always
-cache:
-  directories:
-  - node_modules
+# cache:
+#   directories:
+#   - node_modules
 before_install:
 - npm install -g npm@3.8.9
-install:
-- npm install
-- npm run snyk-protect
+# install:
+# - npm install
+# - npm run snyk-protect
 after_script:
 - npm run coverage
 - cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
