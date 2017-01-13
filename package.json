@@ -13,7 +13,7 @@
   },
   "betterScripts": {
     "test": "tape \"tests/**/*.js\" && snyk auth $SNYK_TOKEN && snyk test"
-  }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/smockle/regexpin.git"
