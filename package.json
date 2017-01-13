@@ -5,12 +5,15 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "tape \"tests/**/*.js\" && snyk auth $SNYK_TOKEN && snyk test",
+    "test": "better-npm-run test",
     "coverage": "istanbul cover tape \"tests/**/*.js\"",
     "snyk-protect": "snyk protect",
     "prepublish": "npm run snyk-protect",
     "postpublish": "greenkeeper-postpublish"
   },
+  "betterScripts": {
+    "test": "tape \"tests/**/*.js\" && snyk auth $SNYK_TOKEN && snyk test"
+  }
   "repository": {
     "type": "git",
     "url": "git+https://github.com/smockle/regexpin.git"
@@ -26,6 +29,7 @@
     "snyk": "^1.15.0"
   },
   "devDependencies": {
+    "better-npm-run": "0.0.14",
     "codeclimate-test-reporter": "^0.4.0",
     "coveralls": "^2.11.6",
     "eslint": "^3.0.0",
