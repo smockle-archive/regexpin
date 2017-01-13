@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "tape \"tests/**/*.js\" && snyk test",
+    "test": "tape \"tests/**/*.js\" && snyk auth $SNYK_TOKEN && snyk test",
     "coverage": "istanbul cover tape \"tests/**/*.js\"",
     "snyk-protect": "snyk protect",
     "prepublish": "npm run snyk-protect",
