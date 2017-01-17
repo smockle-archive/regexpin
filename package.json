@@ -28,7 +28,7 @@
   "homepage": "https://github.com/smockle/regexpin#readme",
   "dependencies": {
     "immutable": "^3.7.6",
-    "snyk": "^1.15.0"
+    "snyk": "^1.24.0"
   },
   "devDependencies": {
     "codeclimate-test-reporter": "^0.4.0",
