@@ -8,6 +8,8 @@
 
 # regexpIn
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/smockle/regexpin.svg)](https://greenkeeper.io/)
+
 Like Immutable.JS’ [Iterable#getIn](https://facebook.github.io/immutable-js/docs/#/Iterable/getIn), but with `RegExp` support.
 
 ## Installation
