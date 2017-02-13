@@ -5,10 +5,9 @@
 [![Test Coverage](https://codeclimate.com/github/smockle/regexpin/badges/coverage.svg)](https://codeclimate.com/github/smockle/regexpin/coverage)
 [![Coverage Status](https://coveralls.io/repos/github/smockle/regexpin/badge.svg?branch=master)](https://coveralls.io/github/smockle/regexpin?branch=master)
 [![Known Vulnerabilities](https://snyk.io/test/npm/regexpin/badge.svg)](https://snyk.io/test/npm/regexpin)
+[![Greenkeeper badge](https://badges.greenkeeper.io/smockle/regexpin.svg)](https://greenkeeper.io/)
 
 # regexpIn
-
-[![Greenkeeper badge](https://badges.greenkeeper.io/smockle/regexpin.svg)](https://greenkeeper.io/)
 
 Like Immutable.JS’ [Iterable#getIn](https://facebook.github.io/immutable-js/docs/#/Iterable/getIn), but with `RegExp` support.
 
