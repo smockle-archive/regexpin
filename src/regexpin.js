@@ -19,11 +19,13 @@ function _regexpIn (searchKeyPath, iterable) {
     var iterableKeys = _iterable.keys()
     var test
     if (typeof key === 'string') {
-      test = (value) => key === value
+      test = value => key === value
     } else if (key instanceof RegExp) {
       test = RegExp.prototype.test.bind(key)
     } else {
-      throw new TypeError('keys in search key path must be strings or regular expressions')
+      throw new TypeError(
+        'keys in search key path must be strings or regular expressions'
+      )
     }
     for (var iterableKey of iterableKeys) {
       if (test(iterableKey)) {
@@ -45,7 +47,10 @@ function regexpIn () {
   if (arguments.length === 0 || !('map' in arguments[0])) {
     throw new TypeError('regexpIn requires a search key path')
   } else if (arguments.length === 1) {
-    return _regexpIn.bind.apply(_regexpIn, [this].concat(new Array(arguments[0])))
+    return _regexpIn.bind.apply(
+      _regexpIn,
+      [this].concat(new Array(arguments[0]))
+    )
   } else {
     return _regexpIn.apply(this, arguments)
   }
