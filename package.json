@@ -6,6 +6,7 @@
   "scripts": {
     "test": "nyc node test/regexpin.js | colortape",
     "coveralls": "nyc report --reporter=text-lcov | coveralls",
+    "prepublish": "npm test",
     "precommit": "lint-staged"
   },
   "repository": {
