@@ -7,9 +7,7 @@ notifications:
     on_success: change
     on_failure: always
 after_script:
-- npm run coverage
-- cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
-- "./node_modules/.bin/codeclimate-test-reporter < ./coverage/lcov.info"
+- npm run coveralls
 env:
   global:
   - secure: sJmeZgGvd7xsuM0iUfSUVAXg0Uqc13t0HTswJMnTSqfU4ZE2cgfKT0AVLoHWRYay267gMVcvpcn+bwjut9kZOmHQb2PvPThuyko7jsWd/j78zcp2Y4eLePNUsJPeAoxURJ2OReIH1kNrbqtTywvX3gsbQPS06c8Pc/6Ri3aXxPPqsgPy6f832BKJRH66x2KJtBbcIcTuofa3hejcoy2wO3DhjCe+OGWftbLxN/1oWKSJ5Bpq7OwQpFNtgReyJf1h4L/lSKA7cugMYyT0z9tMrwxBss/1hT+ElWmcxb+7PNKG391SIRYHC0XoBVqwC0pC4N11UpICvklmaTBdbwRhJj4fVSwwHP7P6JroigOehBcopqn8mEwB+UVmO+EwNopDWwsZY7IgTsZHiYGdLAlz3svcbLfS0yM9XB+sU5vL4uLuu514XqT9UIwP9atVQkPH7+J4V+yr3sx5qf/fvo2ZPDh4aixAfvg2D0xgTX90d7QiLaDoitaeH4UmcNqehUnsAyjYt0p0R4Egevamy8SxIA7HLBQARwSYXzemhHqyUsXXJcJyIYBxZezydnwD+mIebVEhyDH3w9co33OSaPxAlzDhL9Ohq9qXRxSc+fjGlMF5Uns1MWNdHuGWfKlVsdvgtXE9Snu8f2deCtfvFK2TeaFLFK+A0VJIwYOjQLzVpQA=
