@@ -3,7 +3,7 @@
 [![Build status](https://ci.appveyor.com/api/projects/status/5pkcck6x92p98p6d?svg=true)](https://ci.appveyor.com/project/smockle/regexpin)
 [![Code Climate](https://codeclimate.com/github/smockle/regexpin/badges/gpa.svg)](https://codeclimate.com/github/smockle/regexpin)
 [![Test Coverage](https://codeclimate.com/github/smockle/regexpin/badges/coverage.svg)](https://codeclimate.com/github/smockle/regexpin/coverage)
-[![Known Vulnerabilities](https://snyk.io/test/npm/regexpin/badge.svg)](https://snyk.io/test/npm/regexpin)
+[![Known Vulnerabilities](https://snyk.io/test/github/smockle/regexpin/badge.svg)](https://snyk.io/test/github/smockle/regexpin)
 [![Greenkeeper badge](https://badges.greenkeeper.io/smockle/regexpin.svg)](https://greenkeeper.io/)
 
 # regexpIn
