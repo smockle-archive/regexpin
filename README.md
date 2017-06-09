@@ -1,8 +1,7 @@
 [![npm](https://img.shields.io/npm/v/regexpin.svg)](https://www.npmjs.com/package/regexpin)
 [![Build Status](https://travis-ci.org/smockle/regexpin.svg?branch=master)](https://travis-ci.org/smockle/regexpin)
 [![Build status](https://ci.appveyor.com/api/projects/status/5pkcck6x92p98p6d?svg=true)](https://ci.appveyor.com/project/smockle/regexpin)
-[![Code Climate](https://codeclimate.com/github/smockle/regexpin/badges/gpa.svg)](https://codeclimate.com/github/smockle/regexpin)
-[![Test Coverage](https://codeclimate.com/github/smockle/regexpin/badges/coverage.svg)](https://codeclimate.com/github/smockle/regexpin/coverage)
+[![codecov](https://codecov.io/gh/smockle/regexpin/branch/master/graph/badge.svg)](https://codecov.io/gh/smockle/regexpin)
 [![Known Vulnerabilities](https://snyk.io/test/github/smockle/regexpin/badge.svg)](https://snyk.io/test/github/smockle/regexpin)
 [![Greenkeeper badge](https://badges.greenkeeper.io/smockle/regexpin.svg)](https://greenkeeper.io/)
 
