@@ -1,6 +1,6 @@
-const test = require('tape')
-const Immutable = require('immutable')
-const regexpIn = require('../lib/regexpin')
+import regexpIn from '../lib/regexpin'
+import Immutable from 'immutable'
+import test from 'tape'
 
 test('regexpIn', t => {
   t.plan(30)

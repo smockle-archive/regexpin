@@ -4,8 +4,8 @@
   "description": "Like Immutable.JS' Iterable#getIn, but with RegExp support.",
   "main": "lib/regexpin.js",
   "scripts": {
-    "test": "node test/regexpin.js | colortape",
-    "coverage": "nyc --reporter=lcov node test/regexpin.js | colortape",
+    "test": "node -r @std/esm test/regexpin.mjs | colortape",
+    "coverage": "nyc --require @std/esm --extension .mjs --reporter=lcov node test/regexpin.mjs | colortape",
     "postcoverage": "nyc report",
     "prepublish": "npm test",
     "precommit": "lint-staged"
@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/smockle/regexpin#readme",
   "dependencies": {
+    "@std/esm": "^0.5.1",
     "immutable": "^3.8.1"
   },
   "devDependencies": {
@@ -42,5 +43,8 @@
       "./node_modules/.bin/prettier-eslint --write",
       "git add"
     ]
+  },
+  "@std/esm": {
+    "cjs": true
   }
 }
