@@ -6,9 +6,10 @@
   "scripts": {
     "debug": "node --nolazy --inspect-brk=5858 -r @std/esm test/regexpin.mjs",
     "test": "node -r @std/esm test/regexpin.mjs | colortape",
-    "coverage": "nyc --require @std/esm --extension .mjs --reporter=lcov node test/regexpin.mjs | colortape",
+    "coverage":
+      "nyc --require @std/esm --extension .mjs --reporter=lcov node test/regexpin.mjs | colortape",
     "postcoverage": "nyc report",
-    "prepublish": "npm test",
+    "prepublishOnly": "npm test",
     "precommit": "lint-staged"
   },
   "repository": {
@@ -40,10 +41,7 @@
     "prettier-eslint-cli": "^4.0.0"
   },
   "lint-staged": {
-    "*.{js,mjs}": [
-      "./node_modules/.bin/prettier-eslint --write",
-      "git add"
-    ]
+    "*.{js,mjs}": ["./node_modules/.bin/prettier-eslint --write", "git add"]
   },
   "@std/esm": {
     "cjs": true
