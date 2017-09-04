@@ -4,6 +4,7 @@
   "description": "Like Immutable.JS' Iterable#getIn, but with RegExp support.",
   "main": "lib/regexpin.js",
   "scripts": {
+    "debug": "node --nolazy --inspect-brk=5858 -r @std/esm test/regexpin.mjs",
     "test": "node -r @std/esm test/regexpin.mjs | colortape",
     "coverage": "nyc --require @std/esm --extension .mjs --reporter=lcov node test/regexpin.mjs | colortape",
     "postcoverage": "nyc report",
