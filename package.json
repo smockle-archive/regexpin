@@ -1,6 +1,6 @@
 {
   "name": "regexpin",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "Like Immutable.JS' Iterable#getIn, but with RegExp support.",
   "main": "lib/regexpin.js",
   "module": "lib/regexpin.mjs",
